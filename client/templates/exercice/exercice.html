@@ -1,0 +1,22 @@
+<template name="exercice">
+    <input type="" name="" id="exTitle">
+    <button id="sendEx">Entrer un exercice</button>
+    <ul>
+    {{#each exercices}}
+        <li><h2>{{title}}</h2></li>
+        <ul>
+         {{#let exId=@index}}
+            {{#each eleves}}
+                <li>{{name}}-{{firstName}}</li>
+                <li><input type="" value="" name="note" id="{{_id}}"></li> <!-- pour attribuer un id à l'input en fontion de l'exercice {{idInput exId}}-->
+                <li><button name="note" id="sendNote">entrer la note</button></li>
+                <li id="note-eleve">{{myNote note exId}} </li>
+                <li>moyenne : {{moyenne note}}</li>
+            {{/each}}
+
+        {{/let}}
+       </ul>
+          <a href="" id="deleteEx">X</a>
+    {{/each}}
+    </ul>
+</template>

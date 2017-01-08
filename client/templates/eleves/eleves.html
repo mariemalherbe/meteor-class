@@ -1,0 +1,13 @@
+<template name="eleve">
+	<div>
+		<h1>Elèves</h1>
+		<input type="" name="name" id="name" placeholder="nom">
+		<input type="" name="" id="firstName" placeholder="prénom">
+		<button name="name" id="send">entrer un élève</button>
+	</div>
+
+	<h2>Liste des élèves</h2>
+		{{#each eleves}}
+		<h3>{{name}}-{{firstName}}</h3><a href="" id="delete">X</a>
+		{{/each}}
+</template>
